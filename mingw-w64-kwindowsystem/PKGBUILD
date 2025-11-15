@@ -4,7 +4,7 @@ source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-framework
 _realname=kwindowsystem
 pkgbase="mingw-w64-${_realname}"
 pkgname=("${MINGW_PACKAGE_PREFIX}-${_realname}")
-pkgver=6.19.0
+pkgver=6.20.0
 pkgrel=1
 pkgdesc="Access to the windowing system (mingw-w64)"
 arch=('any')
@@ -31,7 +31,7 @@ optdepends=(
 )
 groups=("${MINGW_PACKAGE_PREFIX}-kf6")
 source=("https://download.kde.org/stable/frameworks/${pkgver%.*}/${_realname}-${pkgver}.tar.xz"{,.sig})
-sha256sums=('7ef870cc6c37fc98e4655c267cda069b28259640524d1088d4434350827e59da'
+sha256sums=('836be005df3c8cfc81d9ca199f19e36ba0df515d69e7d8b06343465412f6f477'
             'SKIP')
 validpgpkeys=(
   'E0A3EB202F8E57528E13E72FD7574483BB57B18D' # Jonathan Esk-Riddell <jr@jriddell.org>
